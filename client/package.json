@@ -8,7 +8,7 @@
     "lint": "eslint src/* test/*",
     "test": "eslint app/* test/* && mocha --compilers js:babel-register test/unit/*",
     "teste2e": "protractor protractor.conf.js",
-    "serve": "webpack-dev-server --progress --colors --port 9000",
+    "start": "webpack-dev-server --progress --colors --port 9000",
     "build": "webpack --progress --colors --bail"
   },
   "dependencies": {
