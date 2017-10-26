@@ -12,8 +12,8 @@
     "build": "webpack --progress --colors --bail"
   },
   "dependencies": {
-    "log-level": "^1.1.0",
     "axios": "^0.15.3",
+    "babel": "^6.23.0",
     "babel-core": "^6.24.0",
     "babel-loader": "^6.4.1",
     "babel-preset-es2015": "^6.24.0",
@@ -30,7 +30,9 @@
     "history": "^4.6.1",
     "immutable": "^3.8.1",
     "json-loader": "^0.5.4",
+    "lib": "^3.0.1",
     "lodash": "4.17.4",
+    "log-level": "^1.1.0",
     "loglevel": "^1.4.1",
     "mocha": "3.2.0",
     "npm-check-updates": "2.10.4",
@@ -43,6 +45,7 @@
     "redux": "^3.6.0",
     "redux-thunk": "^2.2.0",
     "socket.io-client": "^1.7.3",
+    "src": "^1.1.2",
     "style-loader": "^0.16.0",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.1",
