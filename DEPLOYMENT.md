@@ -1,7 +1,5 @@
 
-PoinZ is currently deployed on a free-tier EC2 instance for testing purposes.
 
-A more suitable deployment might be needed in the future.
 
 ### Amazon EC2 deployment
 

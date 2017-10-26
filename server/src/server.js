@@ -20,10 +20,12 @@ const store = roomsStoreFactory(settings.persistentStore);
 rest.init(app, store);
 
 // serve static client files
-app.use(express.static(path.resolve(__dirname, '../public')));
+console.log("Statis Files path", __dirname);
+app.use(express.static(path.resolve(__dirname, '../src/public')));
 // enable html5 history mode by "forwarding" every unmatched route to the index.html file
 app.get('*', function (request, response) {
-  response.sendFile(path.resolve(__dirname, '../public/index.html'));
+	console.log("We hit the route again", __dirname)
+  response.sendFile(path.resolve(__dirname, '../src/public/index.html'));
 });
 
 const commandProcessor = commandProcessorFactory(
