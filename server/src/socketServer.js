@@ -1,5 +1,5 @@
 const http = require('http');
-const {v4 as uuid} = require('uuid');
+const uuid = require('uuid').v4;
 const socketIo = require('socket.io');
 const logging = require('./logging');
 
