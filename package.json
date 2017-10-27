@@ -15,7 +15,7 @@
     "build": "node build/dockerImage.js",
     "dependencyCheck": "node ./build/dependencyCheck.js ./package.json && node ./build/dependencyCheck.js ./client/package.json && node ./build/dependencyCheck.js ./server/package.json",
     "postinstall": "cd client/ && npm i && cd ../server && npm i",
-    "start": "cross-env NODE_ENV=production REDIS_URL=redis://h:p651d0d54207d16cfc9fa2201777feb99d7bb8a566e883684020655cbc7170e67@ec2-34-236-65-51.compute-1.amazonaws.com:32839 node ./server/lib/server.js"
+    "start": "node server/lib/server.js"
   },
   "devDependencies": {
     "del": "2.2.2",
