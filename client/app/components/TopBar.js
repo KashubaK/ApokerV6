@@ -6,7 +6,7 @@ import {toggleBacklog, toggleUserMenu, toggleLog} from '../actions';
 const TopBar = ({roomId, username, toggleBacklog, toggleUserMenu, toggleLog}) => {
   return (
     <div className="top-bar">
-      <div className="poinz-logo">Apoker</div>
+      <div className="apoker-logo">Apoker</div>
       <a className="backlog-toggle clickable" onClick={toggleBacklog}>
         <span className="menu-link-inner">
           <span></span>

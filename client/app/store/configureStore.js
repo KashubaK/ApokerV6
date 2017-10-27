@@ -18,12 +18,6 @@ const loggerMiddleware = store => next => action => {
   return result;
 };
 
-/**
- * configures and sets up the redux store.
- *
- * @param {Immutable.Map} [initialState]
- * @param {object} the redux store
- */
 export default function configureStore(initialState) {
 
   let store = createStore(
