@@ -1,6 +1,6 @@
-import winston from 'winston';
-import settings from './settings';
-import dailyRotateFileTransport from 'winston-daily-rotate-file';
+const winston = require('winston');
+const settings = require('./settings');
+const dailyRotateFileTransport = require('winston-daily-rotate-file');
 
 /**
  * configuration of root logger with two appenders.
@@ -38,4 +38,4 @@ function getLogger(loggerName) {
   return newLogger;
 }
 
-export default {getLogger};
+module.exports = {getLogger};
