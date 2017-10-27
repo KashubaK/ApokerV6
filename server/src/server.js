@@ -1,14 +1,13 @@
-import path from 'path';
-import express from 'express';
-
-import settings from './settings';
-import socketServer from './socketServer';
-import commandProcessorFactory from './commandProcessor';
-import logging from './logging';
-import rest from './rest';
-import roomsStoreFactory from './store/roomStoreFactory';
-import commandHandlers from './commandHandlers/commandHandlers';
-import eventHandlers from './eventHandlers/eventHandlers';
+const path = require('path');
+const express = require('express');
+const settings = require('./settings');
+const socketServer = require('./socketServer');
+const commandProcessorFactory = require('./commandProcessor');
+const logging = require('./logging');
+const rest = require('./rest');
+const roomsStoreFactory = require('./store/roomStoreFactory');
+const commandHandlers = require('./commandHandlers/commandHandlers');
+const eventHandlers = require('./eventHandlers/eventHandlers');
 
 const LOGGER = logging.getLogger('server');
 
